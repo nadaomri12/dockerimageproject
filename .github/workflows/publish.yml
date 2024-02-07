@@ -12,6 +12,6 @@ jobs:
        password: §{{secret.GITHUB_TOKEN}}
     -name: Build the hello-Docker image  
      run:
-       docker build.--tag ghcr.io/deselikem/hello-docker-gcr-demo: latest 
-       docker run ghcr.io/deselikem/hello-docker-gcr-demo: latest
-       docker push ghcr.io/deselikem/hello-docker-gcr-demo: latest
+      docker build --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest .
+        docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
+        docker push ghcr.io/deselikem/hello-docker-gcr-demo:latest
