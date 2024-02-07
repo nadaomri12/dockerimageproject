@@ -1,4 +1,4 @@
 FROM node:alpine
 
 COPY . /app
-CMD node /app/app.js
+CMD ["node", "app.js"]
