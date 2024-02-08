@@ -18,6 +18,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: dockerfile
+          context: .
           push: true
           tags: nadaomri2001/pushdockerhub:latest
